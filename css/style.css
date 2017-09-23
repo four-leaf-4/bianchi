@@ -1,0 +1,159 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  font-family: "Noto Sans Japanese";
+  font-weight: lighter;
+  font-size: 14px; }
+
+#main {
+  margin: 48px 0; }
+
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100%;
+  background: #ffffff;
+  border-top: 2px solid #54dbc2;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; }
+
+ul.menu-list {
+  position: absolute;
+  box-sizing: border-box;
+  top: 48px;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background: #ffffff; }
+
+ul.menu-list li {
+  color: rgba(0, 0, 0, 0.6); }
+
+footer {
+  background-color: #23a68e; }
+  footer p {
+    color: #fff;
+    padding: 20px;
+    font-size: 0.8rem; }
+
+div.humberger_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 48px;
+  height: 48px;
+  cursor: pointer; }
+
+div.btn-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25% 0;
+  box-sizing: border-box; }
+  div.btn-icon span {
+    display: block;
+    height: 2px;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.8);
+    transition: .35s ease-in-out; }
+    .open div.btn-icon span:nth-of-type(1) {
+      transform: translateY(5px) rotate(315deg); }
+    .open div.btn-icon span:nth-of-type(2) {
+      width: 0;
+      left: 50%; }
+    .open div.btn-icon span:nth-of-type(3) {
+      transform: translateY(-8px) rotate(-315deg); }
+
+/*# sourceMappingURL=style.css.map */

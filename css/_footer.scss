@@ -1,0 +1,8 @@
+footer{
+  background-color: darken($main_color, $amount_dark);
+  p{
+    color: #fff;
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+}

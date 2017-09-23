@@ -1,0 +1,16 @@
+@import "html5reset";
+@import "colors";
+
+body{
+  font-family: "Noto Sans Japanese";
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+#main{
+  margin: 48px 0;
+}
+
+@import "header";
+@import "footer";
+@import "humberger_menu";

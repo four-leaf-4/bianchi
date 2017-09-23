@@ -1,0 +1,25 @@
+header.header{
+  position: fixed;
+  top:0;
+  left: 0;
+  height:48px;
+  width:100%;
+  background:$background_color;
+  border-top: 2px solid $main_color;
+  box-shadow:0px 1px 0px 0px $split_line;
+  box-sizing: border-box;
+}
+
+ul.menu-list{
+  position: absolute;
+  box-sizing:border-box;
+  top:48px;
+  width:100%;
+  height:auto;
+  margin:0;
+  background:$background_color;
+}
+
+ul.menu-list li{
+  color: $menu_list_text_color;
+}
