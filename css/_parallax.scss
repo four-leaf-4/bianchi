@@ -1,0 +1,82 @@
+div.parallax{
+  height:100%;
+}
+
+
+div.stripe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+  height:100vh;
+  margin:0 auto;
+  background-attachment: fixed;
+  background-image: repeating-linear-gradient(0deg, pink, pink 5px, crimson 5px, crimson 10px);
+  p{
+    max-width: 500px;
+    width: 100%;
+    text-align:center;
+    margin:0;
+    color: $main_color;
+    background:$background_color;
+  }
+}
+
+div.parallx_image{
+  position: relative;
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 60%;
+  @include mq(desktop){
+    background-attachment: fixed;
+    max-height: 900px;
+    height: 100vh;
+    padding-top: none;
+  }
+  &:nth-of-type(1){
+     background-image:url("https://upload.wikimedia.org/wikipedia/commons/5/5b/1965_Toyota_Sports-800_01.jpg");
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+  &:nth-of-type(3){
+     background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/77/1967_Toyota_1600GT_01.jpg");
+     background-color: rgba(0, 0, 0, 0.6);
+  }
+  &:nth-of-type(5){
+     background-image:url("https://upload.wikimedia.org/wikipedia/commons/9/97/TOYOTA_2000GT.jpg");
+     background-color: rgba(0, 0, 0, 0.4);
+  }
+  &__textbox{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    font-size: 1rem;
+    padding: 1% 5%;
+    background-color: #efefef;
+      @include mq(desktop){
+        bottom: 60%;
+        right: 10%;
+        font-size: 4rem;
+      }
+  }
+}
+
+div.parallx_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 25vh;
+  @include mq(desktop){
+    height: 50vh;
+  }
+}
+
+p.top_text{
+  padding: 50vh 0;
+  width: 100%;
+  text-align: center;
+}

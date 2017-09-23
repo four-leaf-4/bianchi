@@ -92,7 +92,10 @@ body {
   font-size: 14px; }
 
 #main {
-  margin: 48px 0; }
+  margin: 48px 0 0 0; }
+  @media screen and (min-width: 768px) {
+    #main {
+      margin: 0; } }
 
 header.header {
   position: fixed;
@@ -103,9 +106,19 @@ header.header {
   background: #ffffff;
   border-top: 2px solid #54dbc2;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; }
+  z-index: 100; }
+  @media screen and (min-width: 768px) {
+    header.header {
+      height: 15vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
 
 ul.menu-list {
+  display: none;
+  list-style: none;
   position: absolute;
   box-sizing: border-box;
   top: 48px;
@@ -113,9 +126,36 @@ ul.menu-list {
   height: auto;
   margin: 0;
   background: #ffffff; }
+  @media screen and (min-width: 768px) {
+    ul.menu-list {
+      position: relative;
+      display: block !important;
+      text-align: right;
+      top: auto; } }
 
 ul.menu-list li {
+  background: #efefef;
+  border-bottom: 1px solid black;
+  text-align: center;
   color: rgba(0, 0, 0, 0.6); }
+  ul.menu-list li a {
+    display: block;
+    color: #54dbc2;
+    padding: 1rem 0;
+    text-decoration: none; }
+    @media screen and (min-width: 768px) {
+      ul.menu-list li a {
+        display: inline-block;
+        padding: 0; } }
+  @media screen and (min-width: 768px) {
+    ul.menu-list li {
+      background: none;
+      border-bottom: none;
+      padding: 0 10px 0 0;
+      display: inline-block; }
+      ul.menu-list li::after {
+        content: "/";
+        padding-left: 10px; } }
 
 footer {
   background-color: #23a68e; }
@@ -132,6 +172,9 @@ div.humberger_menu {
   width: 48px;
   height: 48px;
   cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    div.humberger_menu {
+      display: none; } }
 
 div.btn-icon {
   width: 100%;
@@ -155,5 +198,77 @@ div.btn-icon {
       left: 50%; }
     .open div.btn-icon span:nth-of-type(3) {
       transform: translateY(-8px) rotate(-315deg); }
+
+div.parallax {
+  height: 100%; }
+
+div.stripe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-image: repeating-linear-gradient(0deg, pink, pink 5px, crimson 5px, crimson 10px); }
+  div.stripe p {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: #54dbc2;
+    background: #ffffff; }
+
+div.parallx_image {
+  position: relative;
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 60%; }
+  @media screen and (min-width: 768px) {
+    div.parallx_image {
+      background-attachment: fixed;
+      max-height: 900px;
+      height: 100vh;
+      padding-top: none; } }
+  div.parallx_image:nth-of-type(1) {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5b/1965_Toyota_Sports-800_01.jpg");
+    background-color: rgba(0, 0, 0, 0.8); }
+  div.parallx_image:nth-of-type(3) {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/77/1967_Toyota_1600GT_01.jpg");
+    background-color: rgba(0, 0, 0, 0.6); }
+  div.parallx_image:nth-of-type(5) {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/97/TOYOTA_2000GT.jpg");
+    background-color: rgba(0, 0, 0, 0.4); }
+  div.parallx_image__textbox {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    font-size: 1rem;
+    padding: 1% 5%;
+    background-color: #efefef; }
+    @media screen and (min-width: 768px) {
+      div.parallx_image__textbox {
+        bottom: 60%;
+        right: 10%;
+        font-size: 4rem; } }
+
+div.parallx_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 25vh; }
+  @media screen and (min-width: 768px) {
+    div.parallx_text {
+      height: 50vh; } }
+
+p.top_text {
+  padding: 50vh 0;
+  width: 100%;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 @import "html5reset";
+@import "mediaquery";
 @import "colors";
 
 body{
@@ -8,9 +9,13 @@ body{
 }
 
 #main{
-  margin: 48px 0;
+  margin: 48px 0 0 0;
+  @include mq(desktop){
+      margin: 0;
+  }
 }
 
 @import "header";
 @import "footer";
 @import "humberger_menu";
+@import "parallax";

@@ -6,6 +6,9 @@ div.humberger_menu{
 	width: 48px;
 	height: 48px;
   cursor: pointer;
+  @include mq(desktop){
+    display: none;
+  }
 }
 
 div.btn-icon{
