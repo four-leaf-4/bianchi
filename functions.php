@@ -22,7 +22,7 @@ function siteVersion()
 function navMenu()
 {
     $nav_menu = '';
-
+    
     foreach (config('nav_menu') as $uri => $name) {
         $nav_menu .='<li class="nav_menu_content">'.'<span class="nav_menu_content_decoration">'.'<a href="'.(config('pretty_uri') || $uri == '' ? '' : '?page=').$uri.'">'.$name.'</a>'.'</span>'.'</li>';
     }

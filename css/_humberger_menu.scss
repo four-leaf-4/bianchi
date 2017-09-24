@@ -2,7 +2,7 @@ div.humberger_menu{
   position:absolute ;
   top: 0;
   left: 0;
-  background:$background_color;
+  background: $color_white;
 	width: 48px;
 	height: 48px;
   cursor: pointer;
@@ -24,7 +24,7 @@ div.btn-icon{
     display: block;
     height: 2px;
   	width: 60%;
-  	background: $humberger_menu_icon_color;
+  	background: $color_darkgray;
     transition: .35s ease-in-out;
     &:nth-of-type(1){
       .open &{
